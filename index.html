@@ -8,20 +8,25 @@
       content="Portfolio of Yassin, an aspiring Machine Learning Engineer exploring algorithms, mathematics, and practical ML experiments."
     />
     <title>Yassin | Machine Learning Engineer in Progress</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
+<header class="site-header">
       <div class="container header-inner">
         <a class="logo" href="#home">YASSIN.<span>AI</span></a>
 
         <nav class="site-nav" aria-label="Primary">
           <ul class="nav-list">
             <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#journey">Journey</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -31,29 +36,32 @@
     <main id="main">
       <section id="home" class="hero" aria-labelledby="hero-heading">
         <div class="container hero-inner">
-          <p class="eyebrow">Personal portfolio</p>
-          <h1 id="hero-heading">Hi, I'm Yassin.</h1>
-          <p class="hero-subtitle">Machine Learning Engineer in Progress</p>
-          <p class="hero-education">
-            Computer Science graduate from the Arab Academy for Science,
-            Technology and Maritime Transport (AASTMT).
-          </p>
-          <p class="hero-description">
-            I'm exploring the mathematics, algorithms, and engineering behind
-            machine learning — turning theoretical concepts into practical
-            experiments and working projects.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Explore My Projects</a>
-            <a
-              class="button button-secondary"
-              href="https://github.com/yassin230670"
-              target="_blank"
-              rel="noopener noreferrer"
-              >View GitHub</a
-            >
+          <div class="hero-copy">
+            <p class="eyebrow">Personal portfolio</p>
+            <h1 id="hero-heading">Hi, I'm Yassin.</h1>
+            <p class="hero-subtitle">Machine Learning Engineer in Progress</p>
+            <p class="hero-education">
+              Computer Science graduate from the Arab Academy for Science,
+              Technology and Maritime Transport (AASTMT).
+            </p>
+            <p class="hero-description">
+              I'm exploring the mathematics, algorithms, and engineering behind
+              machine learning — turning theoretical concepts into practical
+              experiments and working projects.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">Explore Projects</a>
+              <a class="button button-secondary" href="#contact">Contact Me</a>
+              <a class="button button-secondary" href="documents/Yassin_Mohamed_CV.pdf" download="Yassin_Mohamed_CV.pdf"><svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg><span>Download CV</span></a>
+            </div>
+            <ul class="social-list" id="hero-socials" aria-label="Social links"></ul>
           </div>
-          <ul class="social-list" id="hero-socials" aria-label="Social links"></ul>
+          <figure class="profile-card">
+            <div class="profile-frame">
+              <img src="images/yassin-profile.webp" alt="Portrait of Yassin in a black suit and white shirt" width="2040" height="3202" fetchpriority="high" />
+            </div>
+            <figcaption>Yassin<span>CS Graduate · AASTMT</span></figcaption>
+          </figure>
         </div>
       </section>
 
@@ -70,24 +78,6 @@
             <li class="focus-item">Python &amp; NumPy</li>
             <li class="focus-item">Model Evaluation</li>
           </ul>
-        </div>
-      </section>
-
-      <section
-        id="projects"
-        class="projects-section"
-        aria-labelledby="projects-heading"
-      >
-        <div class="container">
-          <h2 id="projects-heading" class="section-title">Project Gallery</h2>
-          <p class="section-intro">
-            Hands-on machine learning projects built from scratch. Open a
-            project for the full technical write-up.
-          </p>
-          <div class="project-grid" id="project-grid"></div>
-          <p class="section-more">
-            <a class="button button-secondary" href="projects.html">View all projects</a>
-          </p>
         </div>
       </section>
 
@@ -116,6 +106,10 @@
             </p>
           </div>
 
+          <div class="about-actions">
+            <a class="button button-secondary" href="documents/Yassin_Mohamed_CV.pdf" download="Yassin_Mohamed_CV.pdf"><svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg><span>Download CV</span></a>
+          </div>
+
           <h3 class="subsection-title">What I'm Working On</h3>
           <div class="working-grid">
             <article class="info-card">
@@ -137,9 +131,60 @@
           </div>
         </div>
       </section>
-    </main>
+    
 
-    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <section id="skills" class="skills-section" aria-labelledby="skills-heading">
+        <div class="container">
+          <h2 id="skills-heading" class="section-title">Technical Skills</h2>
+          <p class="section-intro">The languages, concepts, and tools I use in my projects and tutorials.</p>
+          <div class="skills-grid">
+            <article class="info-card">
+              <h3>Programming Languages</h3>
+              <ul class="tech-list"><li class="tech-chip">Python</li><li class="tech-chip">C</li><li class="tech-chip">HTML</li><li class="tech-chip">OOP</li></ul>
+            </article>
+            <article class="info-card">
+              <h3>Machine Learning</h3>
+              <ul class="tech-list"><li class="tech-chip">Linear Regression</li><li class="tech-chip">Polynomial Regression</li><li class="tech-chip">Perceptron</li><li class="tech-chip">Gradient Descent &amp; Optimizers</li><li class="tech-chip">Cross-Validation</li><li class="tech-chip">Model Evaluation</li></ul>
+            </article>
+            <article class="info-card">
+              <h3>Libraries &amp; Frameworks</h3>
+              <ul class="tech-list"><li class="tech-chip">NumPy</li><li class="tech-chip">Pandas</li><li class="tech-chip">Matplotlib</li><li class="tech-chip">Scikit-learn</li></ul>
+            </article>
+            <article class="info-card">
+              <h3>Development Tools</h3>
+              <ul class="tech-list"><li class="tech-chip">GitHub</li><li class="tech-chip">README documentation</li></ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        class="projects-section"
+        aria-labelledby="projects-heading"
+      >
+        <div class="container">
+          <h2 id="projects-heading" class="section-title">Project Gallery</h2>
+          <p class="section-intro">
+            Hands-on machine learning projects built from scratch. Open a
+            project for the full technical write-up.
+          </p>
+          <div class="project-grid" id="project-grid"></div>
+          <p class="section-more">
+            <a class="button button-secondary" href="projects.html">View all projects</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="journey" class="journey-section" aria-labelledby="journey-heading">
+        <div class="container">
+          <h2 id="journey-heading" class="section-title">Learning Journey &amp; Content</h2>
+          <p class="section-intro">I share tutorials, experiments, and lessons learned across these platforms.</p>
+          <ul class="journey-grid" id="journey-grid"></ul>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section" aria-labelledby="contact-heading">
       <div class="container">
         <h2 id="contact-heading" class="section-title">Contact</h2>
         <p class="section-intro">
@@ -152,6 +197,8 @@
         <ul class="social-list" id="contact-socials" aria-label="Social links"></ul>
       </div>
     </section>
+
+        </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
@@ -167,6 +214,7 @@
     <script>
       document.getElementById("project-grid").innerHTML = PROJECTS.filter((p) => p.featured).map(projectCard).join("");
       document.getElementById("hero-socials").innerHTML = socialLinks();
+      document.getElementById("journey-grid").innerHTML = PROFILE.socials.map((s) => `<li><a class="journey-card" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${icon(s.name)}<span class="journey-name">${s.name}</span><span class="journey-desc">${esc(s.desc)}</span></a></li>`).join("");
       document.getElementById("footer-socials").innerHTML = socialLinks();
       document.getElementById("contact-socials").innerHTML = socialLinks();
       const mail = document.getElementById("contact-email");
